@@ -27,6 +27,9 @@ Mine the first **ePOW commodity token** on the **Eclipse chain** directly from y
 
 ```bash
 pkg update && pkg upgrade -y
+```
+
+```bash
 pkg install curl git clang screen nano wget tar -y
 ```
 
@@ -46,11 +49,30 @@ source $HOME/.cargo/env
 
 ```bash
 wget https://github.com/solana-labs/solana/releases/download/v1.18.3/solana-release-aarch64-unknown-linux-gnu.tar.bz2
+```
+
+```bash
 tar -xvjf solana-release-aarch64-unknown-linux-gnu.tar.bz2
+```
+
+```bash
 mv solana-release-aarch64-unknown-linux-gnu solana
+```
+
+```bash
 cd solana
+```
+
+
+```bash
 export PATH="$HOME/solana/bin:$PATH"
+```
+
+```bash
 echo 'export PATH="$HOME/solana/bin:$PATH"' >> ~/.bashrc
+```
+
+```bash
 source ~/.bashrc
 ```
 
